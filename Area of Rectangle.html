@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Calcute area:</h1>
+<label>Width:</label>
+<input type="number" id="In1">
+
+<label>length:</label>
+
+<input type="number"  id="In2">
+<button  onclick="Calcute_area()">Get Value</button>
+<p id="A"> </p>
+<script>
+  function Calcute_area(){
+    // var result,Wi,len;
+    var w=parseInt(document.getElementById("In1").value);
+    var l=parseInt(document.getElementById("In2").value);
+    var result=w*l;
+    document.getElementById("A").innerHTML=result;
+
+    // alert(result);
+
+  }
+</script>
+</body>
+</html>
